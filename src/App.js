@@ -1,14 +1,12 @@
 import React from "react";
-import Form from './components/form.js';
-import { GlobalStyle } from "./components/globalStyles.js";
+import Form from './components/pokeApi.js';
 
 
 class App extends React.Component {
   render() {
     return(
     <div>
-      
-     <Form />
+     <Form/>
     </div>
     );
   }

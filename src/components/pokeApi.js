@@ -39,7 +39,6 @@ class Form extends React.Component {
     this.setState({
       tempname: ' ' + data.name,
       img: data.sprites.other.dream_world.front_default,
-      //types: data.types[0].type.name
       types,
       id: data.id,
       hp: data.stats[0].base_stat,
@@ -60,9 +59,6 @@ class Form extends React.Component {
   }
 
 
-
-
-
   handleName = event => {
     this.setState({
       name: event.target.value,
@@ -72,9 +68,7 @@ class Form extends React.Component {
 
 
   handleSubmit = event => {
-
     this.fetchInfo()
-    //limpiar
     this.setState({
       name: '',
       types: ''
@@ -160,8 +154,6 @@ class Form extends React.Component {
 
 
         </Card>
-
-
       </Main>
 
     );
