@@ -2,7 +2,6 @@ import styled from "styled-components";
 import background from './images/background.jpg';
 
 
-
 export const Main = styled.div`
 font-family: "Poppins", sans-serif;
   background-image: url(${background});
@@ -16,7 +15,6 @@ font-family: "Poppins", sans-serif;
 
 
 export const Card = styled.div`
- font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +97,7 @@ export const Card = styled.div`
 .imagen{
  height: 130px;
  width: 260px;
- margin-top: 49px;
+ margin-top: 10px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -135,26 +133,37 @@ export const Card = styled.div`
 
 
 .h3{
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   margin-left: 20px;
   margin-top: 5px;
+  display: flex;
   
 }
 
 p{
       margin-top:5px;    
-      font-size: 16px;
+      font-size: 0.9vw;
       color: #5D5D5D;
       display: flex;
       justify-items: flex-start;
 
-      
     }
 
+  @media (max-width: 725px){
+    p{
+      font-size:0.7vw;
+    }
+  }
+
+    
+ 
+    .stats{
+    font-size: 14px;
+  }
+
 .description{
+  max-width: 100%;
     width: 725px;
     height: 80px;
     display: flex;
@@ -162,6 +171,8 @@ p{
     margin-bottom: 50px;
   
     }
+
+   
 
 .container{
   height: 719px;
@@ -177,8 +188,8 @@ p{
   }
 
  .card-stats{
-    width: 60%;
-    height: 150px;
+    width: 50%;
+    height: 23px;
     display: flex;
     flex-direction: row;
     margin-left: 20px;
@@ -186,11 +197,10 @@ p{
   }
 
   .card-values{
-    width: 50%;
-    height: 150px;
+    height: 23px;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 40px;
   
   }
 
@@ -204,10 +214,10 @@ p{
   }
 
 .stats-values{
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    margin-top:27px;
+    margin-top:35px;
     margin-left: 20px;
     margin-bottom: 50px;
 }

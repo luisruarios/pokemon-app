@@ -125,7 +125,7 @@ class Form extends React.Component {
 
           <div className="container">
             <div className="card-types">
-              <div className="h2">Types
+              <div className="h2">Type
                 <p>
                   {this.state.types}
                 </p>
@@ -141,26 +141,19 @@ class Form extends React.Component {
                 <div className="h2">Stats</div>
 
                 <div className="h3">Stats</div>
-                <div className="card-stats"><p>Hp</p></div>
-                <div className="card-stats"><p>Attack</p></div>
-                <div className="card-stats"><p>Deffense</p></div>
+                <div className="card-stats"><p className="stats">Hp</p></div>
+                <div className="card-stats"><p className="stats">Attack</p></div>
+                <div className="card-stats"><p className="stats">Deffense</p></div>
 
               </div>
 
               <div className="stats-values">
-                <div className="h3">Values</div>
-                <div className="card-values"><p>{this.state.hp}</p></div>
-                <div className="card-values"><p>{this.state.attack}</p></div>
-                <div className="card-values"><p>{this.state.deffense}</p></div>
+                <div className="h3">Value</div>
+                <div className="card-values"><p className="stats">{this.state.hp}</p></div>
+                <div className="card-values"><p className="stats">{this.state.attack}</p></div>
+                <div className="card-values"><p className="stats">{this.state.deffense}</p></div>
               </div>
-
-
-
             </div>
-
-
-
-
           </div>
 
 
